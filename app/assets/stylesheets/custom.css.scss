@@ -1,13 +1,22 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+$primary-color: #90ff8a;
+$secondry-color: #056300;
+
 .navbar {
-    background-color: #FDF6EA !important;
+    background-color: $primary-color !important;
     }
     
     .navbar-brand {
     font-size: 3rem;
     }
     
-    
     h1 {
     color: red;
+    }
+
+    .sign-up, .log-in{
+        margin-right: 10px;
+        color: black;
+        border-color: black;        
     }
