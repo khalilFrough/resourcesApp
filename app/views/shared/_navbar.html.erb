@@ -12,11 +12,28 @@
       <li class="nav-item active">
         <%= link_to "Contact Us", contacts_path, class: "nav-link"%>
       </li>
+
+      <!-- drop down menu bar-->
+      <% if logged_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Settings</a>
+            <%= link_to "Profile", current_user %>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <%= link_to "Log out", logout_path, method: :delete %></a>
+          </div>
+        </li>
+        
+        <% else %>
+        
+          <%= link_to "Sign up", signup_path, class: "btn btn-outline-primary my-2 my-sm-0 sign-up"%> 
+          <%= link_to "Log in", login_path, class: "btn btn-outline-primary my-2 my-sm-0 sign-in"%>
+        <% end %>
      
     </ul>
-      
-      <%= link_to "Sign up", signup_path, class: "btan btn-outline-primary my-2 my-sm-0 sign-up"%> 
-      <button class="btn btn-outline-primary my-2 my-sm-0 log-in" type="submit">Log in</button>
     
   </div>
 </nav>
