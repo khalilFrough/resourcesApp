@@ -4,16 +4,17 @@ $primary-color: #90ff8a;
 $secondry-color: #056300;
 
 .navbar {
-    background-color: $primary-color !important;
-    }
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+    border-radius: 0 50px;
+}
     
     .navbar-brand {
     font-size: 3rem;
     }
     
-    h1 {
-    color: red;
-    }
 
     .sign-up, .log-in{
         margin-right: 10px;
@@ -84,4 +85,12 @@ input{
     height: auto !important
 }
 
+// styling the login and sign up forms 
 
+.form-card{
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
