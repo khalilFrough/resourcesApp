@@ -94,3 +94,19 @@ input{
     padding: 10px;
     text-align: center;
 }
+
+ul li {
+    list-style: none;
+}
+
+.debug{
+    background-color:red;
+}
+
+.test{
+    height:100vh;
+    width:100%;
+    background-color: red;
+    background-image: url(../images/2.jpg);
+}
+
