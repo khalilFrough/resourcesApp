@@ -103,10 +103,41 @@ ul li {
     background-color:red;
 }
 
-.test{
-    height:100vh;
-    width:100%;
-    background-color: red;
-    background-image: url(../images/2.jpg);
+.carousel-inner{
+    height: 80vh;
+    
+}
+.carousel-caption{
+    padding-bottom: 35%;
 }
 
+.carousel-item {
+    h2{
+        color:black;
+        font-weight: bold;
+    }
+    p{
+        color: black;
+        font-weight: bold;
+    }
+}
+.banner{
+    background-color: black;
+    color: white;
+    height:30px;
+}
+.col-2{
+   .fab{
+    margin-right: 25px;
+   }
+
+} 
+
+   .text{
+        text-align:right;
+    }
+
+
+.errors{
+    margin-top: 5px;
+}
