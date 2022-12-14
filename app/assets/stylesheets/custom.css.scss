@@ -82,7 +82,7 @@ input, testarea, select, .uneditable-input{
 }
 
 input{
-    height: auto !important
+    height: auto !important;
 }
 
 // styling the login and sign up forms 
@@ -140,4 +140,9 @@ ul li {
 
 .errors{
     margin-top: 5px;
+}
+
+.footer{
+    background-color: black;
+    
 }
